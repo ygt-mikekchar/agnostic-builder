@@ -53,55 +53,45 @@ with the Agnostic colorscheme, so there is no point in keeping
 the original Base16 schemes.  For that reason, only Agnostic
 compatible schemes are in the schemes directory.
 
-## Templates in Base16-Build (I will be removing these soon..)
-* Atom
-* BBEdit (TextWrangler)
-* Chrome DevTools (Web Inspector)
-* Chrome Secure Shell
-* CodeMirror
-* ConEmu
-* Console2
-* DrRacket
-* Emacs
-* Escape Code Shell Script (shell)
-* Geany
-* Gedit
-* Gimp Palette
-* Gnome Terminal
-* Guake
-* highlight.js
-* Highlighting Kate
-* HTML Preview (preview)
-* IDEA
-* IPython Notebook
-* iTerm 2
-* Konsole
-* Mate Terminal
-* MinTTY
-* MultiMarkdown Composer 2 (mmdc2)
-* Mou
-* Notepad++
-* OS X Terminal (terminal-app)
-* Pantheon Terminal
-* prettify.js
-* Prism.js
-* PuTTY
-* Pygments
-* Qt Creator
-* Rainbow
-* Rouge
-* Terminator
-* Termite
-* Textadept
-* TextMate (Sublime Text)
-* Vim
-* Visual Studio
-* Virtual Console (vconsole)
-* Windows Command Prompt
-* Xcode 4
-* XFCE4 Terminal
-* Xresources
-* Zathura
+### Working with upstream
+
+Our goal here is to modify Base16-Builder as little as possible.
+This means that there will be times when you will want to
+merge in code from the upstream branch.  I recommend adding
+the following git remote:
+
+```
+git remote add upstream https://github.com/chriskempson/base16-builder.git
+```
+
+Every once in a while to a `git fetch upstream` to keep the
+upstream version up to date.  Some examples:
+
+Merge upstream changes:
+```
+git merge upstream/master
+```
+
+Checkout a template that is not in Agnotic-Builder yet:
+```
+git checkout upstream/master -- templates/template-name
+```
+
+Don't ever push to upstream :-)
+
+## Templates
+
+After much consideration (at least 20 seconds), I have
+decided that the easiest route will be to remove *all*
+of the original templates and then add them back one
+at a time as they are needed.  If you wish to have one
+of the original templates supported, then just check
+it out the base16-builder repository, modify it and
+add it back to agnostic builder.
+
+### Currently Supported Templates
+
+* xresources
 
 ## Original Base16-Builder Maintainers
 * [chriskempson](https://github.com/chriskempson) - HTML Preview, Vim, TextMate, iTerm 2, XFCE4 Terminal, Mou, Escape Code Shell Script, Gnome Terminal, BBEdit
