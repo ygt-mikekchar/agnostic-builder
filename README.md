@@ -93,6 +93,39 @@ add it back to agnostic builder.
 
 * xresources
 
+## Schemes
+
+Base16 uses colour schemes that are organized similar to
+the way that Solarize organizes its colour scheme.
+
+Although it would be convenient to order the schemes
+by Agnostic's order, we can leverage the existing
+Base16 templates better if we stick to Base16's
+order.
+
+Here is how they map.  Solorized is added to give you
+an approximate idea of the colour that Base16 is
+expecting in that slot.  Solarized is actually ordered
+a little bit different, though.
+
+Number  Agnostic     Base16  Solarized
+  0    background    Base00   Base03
+ 10    fg-green      Base01   Base02
+ 11    fg-yellow     Base02   Base01
+  8    bg-highlight  Base03   Base00
+ 12    fg-blue       Base04   Base0
+  7    fg-highlight  Base05   Base1
+ 13    fg-magenta    Base06   Base2
+ 15    foreground    Base07   Base3
+  1    bg-red        Base08   Red
+  9    fg-red        Base09   Orange
+  3    bg-yellow     Base0A   Yellow
+  2    bg-green      Base0B   Green
+  6    bg-cyan       Base0C   Cyan
+  4    bg-blue       Base0D   Blue
+  5    bg-magenta    Base0E   Magenta
+ 14    fg-cyan       Base0F   Violet
+
 ## Original Base16-Builder Maintainers
 * [chriskempson](https://github.com/chriskempson) - HTML Preview, Vim, TextMate, iTerm 2, XFCE4 Terminal, Mou, Escape Code Shell Script, Gnome Terminal, BBEdit
 * [jayferd](https://github.com/jayferd) - Rouge
