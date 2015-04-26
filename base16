@@ -206,7 +206,6 @@ class Theme
     # and the weight of color_2 is given by 1 minus the weight of color_1.
     p = (weight/100.0).to_f
     w = p*2 - 1
-    a = 0
 
     w1 = (((w == -1) ? w : (w)/(1 + w)) + 1)/2.0
     w2 = 1 - w1
@@ -243,11 +242,11 @@ class String
 end
 
 help_message = <<-EOF
-Base16 Builder v0.1
-https://github.com/chriskempson/base16-builder
+Agnostic Builder v0.1
+https://github.com/ygt-mikekchar/agnostic-builder
 
-usage: base16               build all schemes and templates
-   or: base16 [-s <scheme>] [-t <template>]
+usage: build-agnostic       build all schemes and templates
+   or: build-agnostic [-s <scheme>] [-t <template>]
 
 -h, --help                  opens this help prompt
 -s, --scheme                build specified scheme
