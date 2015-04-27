@@ -146,7 +146,7 @@ class Theme
   end
 
   def slug(string)
-    string.downcase.strip.gsub(' ', '.').gsub(/[^\w-]/, '')
+    string.downcase.strip.gsub(' ', '-') #.gsub(/[^\w]/, '')
   end
 
   def to_hex_bgr(hex)
